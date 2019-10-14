@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh tong so le</title>
+</head>
+<body>
+<script>
+    let numbers = [1, 2, 3, 4, 5];
+
+    function sum(mang) {
+        let sum = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] % 2 != 0) {
+                sum += mang[i];
+            }
+        }
+        return sum;
+    }
+
+    document.write('gia tri cua mang la :' + numbers + '<br>');
+    document.write('tong cac so le trong mang la : ' + sum(numbers));
+</script>
+</body>
+</html>
