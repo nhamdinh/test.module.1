@@ -6,6 +6,8 @@
 </head>
 <body>
 <script>
+    let matranvuong = [[1,2],[3,4]];
+
     function tongduongcheo(matranvuong) {
         let sum = 0;
         for (let i = 0; i < matranvuong.length; i++) {
@@ -14,7 +16,6 @@
         return sum;
     }
 
-    let matranvuong = [[1,2],[3,4]];
     for (let i = 0; i < matranvuong.length; i++) {
         for (let k = 0; k < matranvuong[i].length; k++) {
 
@@ -22,6 +23,7 @@
         }
         document.write('<br>');
     }
+
     document.write('tong duong cheo la: ' + tongduongcheo(matranvuong));
 </script>
 </body>
