@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ma tran</title>
+    <title>tong duong cheo</title>
 </head>
 <body>
 <script>
+    function tongduongcheo(matranvuong) {
+        let sum = 0;
+        for (let i = 0; i < matranvuong.length; i++) {
+            sum += matranvuong[i][i];
+        }
+        return sum;
+    }
+
+    let matranvuong = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12],[13,14,15,16]];
+    for (let i = 0; i < matranvuong.length; i++) {
+        for (let k = 0; k < matranvuong[i].length; k++) {
+
+            document.write(matranvuong[i][k] + '&nbsp;&nbsp;&nbsp;&nbsp;');
+        }
+        document.write('<br>');
+    }
+    document.write('tong duong cheo matranvuong la: ' + tongduongcheo(matranvuong));
 </script>
 </body>
 </html>
