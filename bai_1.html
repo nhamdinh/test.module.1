@@ -6,23 +6,23 @@
 </head>
 <body>
 enter the number <input placeholder="tinh_den_so" type="number" id="input">
-    <button type="button" onclick="calculation()">Cal</button>
+    <button type="button" onclick="display()">Display</button>
 <p id="output"></p>
 <script>
-    function calculation() {
+    function display() {
         let output = document.getElementById('output');
         let input = parseInt(document.getElementById('input').value);
         let start = 1;
         let text = "";
         while (start <= input) {
-            if (testPrime(start)) {
+            if (isPrime(start)) {
                 text += start + " ";
             }
             start++;
         }
         output.innerText = text;
     }
-    function testPrime(a) {
+    function isPrime(a) {
         if (a < 2) {
             return false;
         }
