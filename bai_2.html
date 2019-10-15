@@ -2,24 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>tinh tong so le</title>
+    <title>Title</title>
 </head>
 <body>
 <script>
-    let numbers = [1, 2, 3, 4, 5];
-
-    function sum(mang) {
-        let sum = 0;
-        for (let i = 0; i < mang.length; i++) {
-            if (mang[i] % 2 != 0) {
-                sum += mang[i];
-            }
-        }
-        return sum;
+    let mang = []
+    for ( let i = 0 ; i < 100 ; i ++){
+        let a = Math.floor(Math.random() * 100);
+        mang.push(a)
     }
-
-    document.write('gia tri cua mang la :' + numbers + '<br>');
-    document.write('tong cac so le trong mang la : ' + sum(numbers));
+    let sum = 0
+    for (let k = 0 ; k < mang.length ; k ++) {
+        if ( mang[k] % 2 != 0){
+            sum += mang[k]
+        }
+    }
+    alert(sum)
 </script>
 </body>
 </html>
